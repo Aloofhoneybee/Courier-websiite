@@ -6,91 +6,141 @@
     <title>Wide Nation Logistics</title>
     <link rel="stylesheet" href="src/output.css">
 </head>
-<body>
+<body class="mb-5 ">
         <!-- header portion-->
-        <nav class="flex justify-around items-center ">
+        <nav class="flex justify-around items-center px-5  ">
             <div class="h-20 flex items-center ">
-                <img src="images/header2.png" alt="logo" class="w-50 ">
+                <img src="images/header2.png" alt="logo" class="w-100 ">
             </div>
-            <div class="w-1/2">
+            <div class="w-3/4">
                 <p>  </p>
             </div>
-            <div class="flex justify-around items-center  w-1/2 " >
+            <div class="flex justify-around items-center  w-1/2 max-sm:hidden " >
                 <a href="#home">Home</a>
                 <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
-                <a class="bg-amber-600 text-white py-2 px-5 rounded-md " href="#call_now">Call Now</a>
+                
             </div>
+            
+            <a class="bg-amber-600 text-white py-2 px-5 rounded-md text-nowrap " href="#call_now">Call Now</a>
         </nav>
-    <section class="flex flex-col justify-center items-center w-full min-h-screen">
-       <div class="h-[600px] w-full">
-            <img class="pb-10 h-full w-full object-fill" src="images/section.png" alt="rider-image">
+    <section class="flex flex-col justify-center items-center min-w-full min-h-screen ">
+       <div class="md:h-[600px] w-full ">
+           <img class="pb-10 h-full w-full object-fill " src="images/section.png" alt="rider-image">
         </div>
-        <section class="flex flex-col md:flex-row justify-around w-full mb-15 ">
+        <h3 class=" text-blue-700 text-4xl font-semibold text-center mb-9"> Services </h3>
+        <section class="flex flex-col lg:flex-row md:justify-around justify-between items-center max-sm:space-y-10 w-full mb-15 px-3 ">
+            
+          
 
-            <div class="bg-neutral-primary-soft block max-w-80 p-6 border-none  rounded-xl shadow-xs shadow-gray-400">
+            <div class=" min-h-70  md:max-w-80 p-6 border-none  rounded-xl shadow-xs shadow-gray-700 ">
                 <!-- card heading-->
-                <div class="flex space-x-7 items-center"> 
+                <div class="flex space-x-7 items-center mb-7"> 
                 <img class="w-20 rounded-md" src="images/bike.png" alt=" bike-icon">
-                <h5 class="mb-2 text-2xl  font-semibold tracking-tight text-heading">Same-Day Delivery</h5>
+                <h5 class=" text-3xl  font-semibold tracking-tight text-heading">Same-Day Delivery</h5>
                 </div>
         
-                <p class="mb-3 text-body">Rapid intra-city delivery within Lagos for urgent parcels and documents. We guarantee safe arrival within hours.</p>
+                <p class=" text-xl">Rapid intra-city delivery within Lagos for urgent parcels and documents. We guarantee safe arrival within hours.</p>
         
             </div>
 
-             <div class="bg-neutral-primary-soft block max-w-80 p-6 border-none  rounded-xl shadow-xs shadow-gray-400">
+             <div class="min-h-70  md:max-w-80 p-6 border-none  rounded-xl shadow-xs shadow-gray-700">
                 <!-- card heading-->
-                <div class="flex space-x-7 items-center"> 
-                <img class="w-20 rounded-full  " src="images/express.png" alt=" truck-icon">
-                <h5 class="mb-2 text-2xl  font-semibold tracking-tight text-heading">Express Dispatch</h5>
+                <div class="flex space-x-5 items-center mb-7"> 
+                <img class="w-20 rounded-e-full  " src="images/express.png" alt=" bolt-icon">
+                <h5 class=" text-3xl  font-semibold tracking-tight text-heading">Express Dispatch</h5>
                 </div>
         
-                <p class="mb-3 text-body">Urgent, direct pickup and drop-off service with zero stopovers. Perfect for keys, documents, and time-sensitive parcels.</p>
+                <p class=" text-xl">Urgent, direct pickup and drop-off service with zero stopovers. Perfect for keys, documents, and time-sensitive parcels.</p>
         
             </div>
 
-           <div class="bg-neutral-primary-soft block max-w-80 p-6 border-none  rounded-xl shadow-xs shadow-gray-400">
+           <div class=" min-h-70 md:max-w-80 p-6 border-none  rounded-xl shadow-xs shadow-gray-700">
                 <!-- card heading-->
-                <div class="flex space-x-7 items-center"> 
+                <div class="flex space-x-4 items-center mb-5"> 
                 <img class="w-20 rounded-md" src="images/box.png" alt=" box-icon">
-                <h5 class="mb-2 text-2xl  font-semibold tracking-tight text-heading">E-commerce Solutions</h5>
+                <h5 class=" text-3xl  font-semibold tracking-tight text-heading">E-commerce Solutions</h5>
                 </div>
         
-                <p class="mb-3 text-body">Tailored logistics for online vendors. We handle Cash on Delivery (COD) remittance, warehousing, and seamless order fulfillment to help your business grow.</p>
+                <p class=" text-xl">Tailored logistics for online vendors. We handle Cash on Delivery (COD) remittance, warehousing, and seamless order fulfillment to help your business grow.</p>
         
             </div>
 
         </section>
-        <section class="flex flex-col justify-center items-center space-y-3 w-full" >
+        <section class="flex flex-col justify-center items-center space-y-3 w-full px-6" >
             <h3 class=" text-blue-700 text-4xl font-semibold"> Get In Touch </h3>
             <p class="font-medium"> Have questions ?our team is ready to help you with your delivery needs</p>
 
-            <div class="flex justify-around items-center w-full">
+            <div class="flex justify-around items-center w-full max-sm:hidden">
         
-                <div class="flex space-x-7 items-center bg-neutral-primary-soft  max-w-80 p-6 border-none  rounded-xl shadow-xs shadow-gray-400">
-                    <img class="w-20 rounded-md" src="images/phone.png" alt=" box-icon">
-                    <h5 class="mb-2 text-2xl  font-semibold tracking-tight text-heading">Call Us</h5>
+                <div class="flex space-x-4 items-center   md:max-w-80  border-none p-3 rounded-xl shadow-xs shadow-gray-400">
+                    <img class="w-15 rounded-md" src="images/phone.png" alt=" phone-icon">
+                   
+                   <div>
+                    <h5 class="mb-2 text-xl  font-semibold tracking-wide ">Call Us</h5>
+                    <p>+234 806275646767</p>
+                    <p>+234 806275646767</p>
+                   </div>
+                    
                 </div>
         
             
 
-                 <div class="flex space-x-7 items-center bg-neutral-primary-soft  max-w-80 p-6 border-none  rounded-xl shadow-xs shadow-gray-400">
-                    <img class="w-20 rounded-md" src="images/email.png" alt=" box-icon">
-                    <h5 class="mb-2 text-2xl  font-semibold tracking-tight text-heading">Email Us</h5>
+                 <div class="flex space-x-4 items-center   md:max-w-80   p-3 border-none  rounded-xl shadow-xs shadow-gray-400">
+                    <img class="w-15 rounded-md" src="images/email.png" alt=" email">
+                    <div>
+                    <h5 class="mb-2 text-xl  font-semibold tracking-tight text-heading">Email Us</h5>
+                    <p>Richardrock10@gmail.com</p>
+                    </div>
+                    
                 </div>
         
-                 <div class="flex space-x-7 items-center bg-neutral-primary-soft  max-w-80 p-6 border-none  rounded-xl shadow-xs shadow-gray-400">
-                    <img class="w-20 rounded-md" src="images/location.png" alt=" box-icon">
-                    <h5 class="mb-2 text-2xl  font-semibold tracking-tight text-heading">Visit Us</h5>
+                 <div class="flex space-x-4 items-center   md:max-w-80   p-3 border-none  rounded-xl shadow-xs shadow-gray-400">
+                    <img class="w-15 rounded-md" src="images/location.png" alt=" location">
+                    <div>
+                    <h5 class="mb-2 text-xl  font-semibold tracking-tight text-heading">Visit Us</h5>
+                    <p> 194 idewu steet olodi apapa</p>
+
+                    </div>
+                    
                 </div>
         
-                 <div class="flex space-x-7 items-center bg-neutral-primary-soft  max-w-80 p-6 border-none  rounded-xl shadow-xs shadow-gray-400">
-                    <img class="w-20 rounded-md" src="images/whatsapp.png" alt=" box-icon">
-                    <h5 class="mb-2 text-2xl  font-semibold tracking-tight text-heading">Text Us</h5>
+                 <div class="flex space-x-4 items-center   md:max-w-80   p-3  border-none  rounded-xl shadow-xs shadow-gray-400">
+                    <img class="w-15 rounded-md" src="images/whatsapp.png" alt=" whatsapp">
+                    <div>
+                    <h5 class="mb-2 text-xl  font-semibold tracking-tight text-heading">Text Us</h5>
+                    <p>+234 806275646767</p>
+
+                    </div>
+                    
                 </div>
         
             </div>
+                <div class="flex flex-col space-x-5 space-y-5    md:max-w-80 w-full  border-none  rounded-xl shadow-xs shadow-gray-400 px-3 py-3 sm:hidden">
+                    <div class=" flex items-center ">
+                        <img class="w-10 rounded-md" src="images/location.png" alt=" location">
+                        <p class="mb-2 text-sm  font-semibold tracking-tight text-heading">Wide Nation Logistics</p>
+
+                    </div>
+                    
+                   <div class=" flex items-center">
+                        <img class="w-10 rounded-md" src="images/phone.png" alt=" phone-icon">
+                        <p class="mb-2 text-sm  font-semibold tracking-tight text-heading">Phone number</p>
+
+                    </div>
+                    
+                   <div class=" flex items-center ">
+                        <img class="w-10 rounded-md" src="images/email.png" alt=" email">
+                        <p class="mb-2 text-sm  font-semibold tracking-tight text-heading">Email</p>
+
+                    </div>
+                    <div class=" flex items-center ">
+                        <img class="w-10 rounded-md" src="images/whatsapp.png" alt=" whatsapp">
+                        <p class="mb-2 text-sm  font-semibold tracking-tight text-heading">whatsapp</p>
+
+                    </div>
+                    
+                </div>
 
         </section>
     </section>
