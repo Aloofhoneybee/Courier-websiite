@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,7 @@
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
-                    <img src="images/header2.png" alt="Wide Nation Logistics" class="h-12 w-auto object-contain">
+                    <img src="images/header2.png" alt="Wide Nation Logistics" class="max-sm:h-20 h-30 w-auto object-contain">
                 </div>
 
                 <!-- Desktop Menu -->
@@ -42,12 +42,27 @@
 
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
-                    <button class="text-gray-500 hover:text-gray-700 focus:outline-none">
+                    <button id="menu-btn" class="text-gray-500 hover:text-gray-700 focus:outline-none">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
+                    
+                </div>
+                <!-- Dropdown menu-->
+                <div id="dropdown-menu" class="hidden bg-white absolute top-full right-0 mt-2 w-50 rounded-xl shadow-2xl overflow-hidden z-50 p-6">
+                   
+                    <div class="flex flex-col space-y-5 items-center justify-center ">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Home</a>
+                    <a href="#services"
+                        class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Services</a>
+                    <a href="#contact"
+                        class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Contact</a>
+                   
+                </div>
+
+
                 </div>
             </div>
         </div>
@@ -56,9 +71,14 @@
     <!-- Hero Section -->
     <section id="home" class="relative pt-10 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+              <!-- Wide Hero Image -->
+            <div class="w-full relative z-10 overflow-hidden rounded-2xl shadow-xl mb-5">
+                <img class="w-full h-auto object-cover" src="images/section.png" alt="Logistics Rider">
+            </div>
+
 
             <!-- Text Content -->
-            <div class="text-center max-w-4xl mx-auto mb-12">
+            <div class="text-center max-w-4xl mx-auto mb-12 mt-15">
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight mb-6">
                     Reliable Logistics for a <span class="text-blue-600">Faster World</span>
                 </h1>
@@ -77,11 +97,7 @@
                 </div>
             </div>
 
-            <!-- Wide Hero Image -->
-            <div class="w-full relative z-10 overflow-hidden rounded-2xl shadow-xl">
-                <img class="w-full h-auto object-cover" src="images/section.png" alt="Logistics Rider">
-            </div>
-
+          
         </div>
     </section>
 
@@ -233,5 +249,21 @@
     </section>
 
 </body>
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const dropdownMenu = document.getElementById('dropdown-menu');
+  
+  menuBtn.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('hidden');
+  });
+  
+  // Close when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!menuBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+      dropdownMenu.classList.add('hidden');
+    }
+  });
+</script>
+
 
 </html>
